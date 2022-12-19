@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="data:,">
+        <!-- <link rel="shortcut icon" href="#" /> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Fair Market Value Of Your Car</title>
+        <style>
+            input[type=number], select {
+            width: 20%;
+            padding: 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            body, html {
+              height: 100%;
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            .bg-image {
+              /* The image used */
+              background-image: url("https://images.pexels.com/photos/39501/lamborghini-brno-racing-car-automobiles-39501.jpeg?auto=compress&cs=tinysrgb&w=600");
+              
+              /* Add the blur effect */
+              filter: blur(6px);
+              -webkit-filter: blur(6px);
+              
+              /* Full height */
+              height: 180%; 
+              width:100;
+              
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            
+            /* Position text in the middle of the page/image */
+            .bg-text {
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+              color: white;
+              font-weight: bold;
+              border: 3px solid #f1f1f1;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+              width: 80%;
+              padding: 20px;
+              text-align: center;
+            }
+            </style>
+    </head>
+
+    <body TEXT = "WHITE";>
+        <div class="bg-image"></div>
+        <div class="bg-text">
+        <h1> Check Fair Market Value Of Your Car </h1>
+        <form method="POST" action="/car_price">
+
+            <br>
+
+                 <label>Year:  </label>
+            <input style="font-size:15px" type = "number" name = "year"  placeholder="Enter Year" size="30" required>
+             <h1 style="color:rgb(255, 255, 255);font-size:10px;">Eg: (2020,2022)</h1> 
+            <br>
+
+            <label>  Mileage: </label>
+            <input style="font-size:15px" type = "number" name = "mileage" placeholder="Enter Mileage(Kmpl)" size="30" required>
+             <h1 style="color:rgb(255, 255, 255);font-size:10px;">Eg: (18,25)</h1>
+            <br>
+
+            <label>   Horse Power: </label>
+            <input style="font-size:15px" type = "number" name = "hp"  placeholder="Enter Hp" size="30" required>
+            <h1 style="color:rgb(255, 255, 255);font-size:10px;">Eg: (1200,1500)</h1>
+            <br>
+
+            <label>Gear Type:</label>
+            <select style="font-size:15px" name = "gear" placeholder="Select gear type">
+                <option value = "automatic">Automatic</option>
+                <option value = "manual">Manual</option>
+            <select>
+            <br>
+
+            <label>        Fuel Type: </label>
+            <select style="font-size:15px" name = "fuel"                 placeholder="Select Fuel type">
+                <option value = "gasoline">gasoline</option>
+                <option value = "diesel">diesel</option>
+                <option value = "Hybrid - gasoline">Hybrid_gasoline</option>
+                <option value = "electric">electric</option>
+                <option value = "hybrid - diesel">hybrid_diesel</option>
+                <option value = "gas">gas</option>
+                <option value = "other">other</option>
+            </select>
+            <br>
+
+            <label>              Make:</label>
+            <select style="font-size:15px" name = "make" placeholder="Select Make">
+                <option value = "Volkswagen">Volkswagen</option>
+                <option value = "Audi">Audi</option>
+                <option value = "Mercedes-Benz">Mercedes-Benz</option>
+                <option value = "Skoda">Skoda</option>
+                <option value = "BMW">BMW</option>
+                <option value = "Ford">Ford</option>
+                <option value = "Opel">Opel</option>
+                <option value = "Renault">Renault</option>
+                <option value = "Seat">Seat</option>
+                <option value = "Hyundai">Hyundai</option>
+                <option value = "CUPRA">CUPRA</option>
+                <option value = "Volvo">Volvo</option>
+                <option value = "Kia">Kia</option>
+                <option value = "Nissan">Nissan</option>
+                <option value = "Toyota">Toyota</option>
+                <option value = "Peugeot">Peugeot</option>
+                <option value = "Dacia">Dacia</option>
+                <option value = "Mazda">Mazda</option>
+                <option value = "Citroën">Citroën</option>
+                <option value = "MINI">MINI</option>
+                <option value = "Porsche">Porsche</option>
+                <option value = "Fiat">Fiat</option>
+                <option value = "Land">Land</option>
+                <option value = "Jaguar">Jaguar</option>
+                <option value = "Jeep">Jeep</option>
+                <option value = "Suzuki">Suzuki</option>
+                <option value = "Mitsubishi">Mitsubishi</option>
+                <option value = "smart">smart</option>
+                <option value = "Honda">Honda</option>
+                <option value = "Alfa">Alfa</option>
+                <option value = "DS">DS</option>
+                <option value = "Abarth">Abarth</option>
+                <option value = "Subaru">Subaru</option>
+                <option value = "Ssangyong">Ssangyong</option>
+                <option value = "Maserati">Maserati</option>
+                <option value = "Lexus">Lexus</option>
+                <option value = "Dodge">Dodge</option>
+                <option value = "MG">MG</option>
+                <option value = "Aston">Aston</option>
+                <option value = "Tesla">Tesla</option>
+                <option value = "Piaggio">Piaggio</option>
+                <option value = "ALPINA">ALPINA</option>
+                <option value = "Bentley">Bentley</option>
+                <option value = "Cadillac">Cadillac</option>
+                <option value = "Polestar">Polestar</option>
+                <option value = "Infiniti">Infiniti</option>
+                <option value = "Lada">Lada</option>
+            </select>
+            <br>
+
+            <!-- Submit -->
+            <style>
+                .button {
+                    display: inline-block;
+                    border-radius: 4px;
+                    background-color: #278ed2;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 28px;
+                    padding: 20px;
+                    width: 250px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 5px;
+                    }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                }
+
+                .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+
+                .button:hover span {
+                padding-right: 25px;
+                }
+
+                .button:hover span:after {
+                opacity: 1;
+                right: 0;
+                }
+            </style>
+
+            <button style="font-size:20px;vertical-align:middle;font-family:verdana" type="submit" value="Submit" class="button"><span>Click Here </span></button>
+            <br><br>
+            <div style="font-size:25px;font-family:verdana" id="box">{{ prediction }} $ </div>&nbsp;
+            <div style="font-size:25px;font-family:verdana" class="card-title">  </div>
+            <br>
+            <p>© Sarika Jadhav.</p>
+            <!-- <input type = "submit" value="SUBMIT">
+
+            <br> -->
+
+            <!-- <p> Weight of your fish is <b> {{ WEIGHT }} grams</b> Only </p> -->
+
+
+        </form>
+
+
+    </body>
+</html>
